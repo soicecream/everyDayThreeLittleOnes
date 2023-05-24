@@ -39,7 +39,7 @@ def get_weather(region, adm):
     key = config["weather_key"]
 
     # 查询地址  找到地址的id
-    region_url = "https://geoapi.qweather.com/v2/city/lookup?location={}&adm={}&key={}".format(region, adm, key)
+    region_url = "https://geoapi.qweather.com/v2/city/lookup?location={}&adm={}&key={}".format(region.split('-')[1], region.split('-')[2], key)
     response = get(region_url, headers=headers).json()
     if response["code"] == "404":
         print("推送消息失败，请检查地区名是否有误！")
@@ -176,7 +176,7 @@ def send_message(to_user, access_token, region_name, textDay, sunrise, sunset, m
             },
             # 地点
             "region": {
-                "value": "{}".format(region_name),
+                "value": region_name,
                 "color": get_color()
             },
             # 天气
