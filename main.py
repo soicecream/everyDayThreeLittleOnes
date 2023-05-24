@@ -176,7 +176,7 @@ def send_message(to_user, access_token, region_name, textDay, sunrise, sunset, m
             },
             # 地点
             "region": {
-                "value": "{} {}   {}".format(today, week, region_name),
+                "value": "{}".format(region_name),
                 "color": get_color()
             },
             # 天气
