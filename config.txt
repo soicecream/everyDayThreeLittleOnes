@@ -13,11 +13,9 @@
   # 和风天气apikey https://dev.qweather.com/
   "weather_key": "ca83826e3ccb4ef8bc109319c9610043",
   # 所在地区
-  # 市
-  "adm": "杭州市",
-  # 区
+  # 市-区
   "region": "杭州市-滨江区",
-  # 生日1
+  # 生日
   "birthday1": {"name": "宇曈", "birthday": "r2001-09-27"},
   "birthday2": {"name": "yl哥", "birthday": "r2001-11-26"},
   "birthday3": {"name": "小马哥", "birthday": "r2002-03-04"},
