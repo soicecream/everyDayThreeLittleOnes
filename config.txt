@@ -16,7 +16,7 @@
   # 市
   "adm": "杭州市",
   # 区
-  "region": "滨江区",
+  "region": "杭州市-滨江区",
   # 生日1
   "birthday1": {"name": "宇曈", "birthday": "r2001-09-27"},
   "birthday2": {"name": "yl哥", "birthday": "r2001-11-26"},
