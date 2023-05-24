@@ -31,7 +31,7 @@ def get_access_token():
 
 
 # 获取天气
-def get_weather(region, adm):
+def get_weather(region):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
@@ -276,9 +276,8 @@ if __name__ == "__main__":
     # 接收的用户
     users = config["user"]
     # 传入地区获取天气信息
-    adm = config["adm"]
     region = config["region"]
-    textDay, sunrise, sunset, max_temp, min_temp, windDirDay, windScaleDay, windSpeedDay, windDirNight, windScaleNight, windSpeedNight, precip, uvIndex = get_weather(region, adm)
+    textDay, sunrise, sunset, max_temp, min_temp, windDirDay, windScaleDay, windSpeedDay, windDirNight, windScaleNight, windSpeedNight, precip, uvIndex = get_weather(region)
 
     note_ch = config["note_ch"]
     note_en = config["note_en"]
